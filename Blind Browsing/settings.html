@@ -1,0 +1,115 @@
+<head>
+    <title>Extension MVP - Blind Browsing - Settings</title>
+    <meta charset="utf8"/>
+</head>
+<style>
+    body{
+        font-family: sans-serif;
+        display: block;
+        width: 95%;
+        margin: auto;
+        align-content: center;
+        text-align: center;
+        background-color: beige;
+        border-radius: 20px;
+    }
+    h1{
+        font-weight: 600;
+    }
+    .level_1{
+        display: block;
+        background-color: rgb(36, 223, 161);
+        padding: 5px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        border-color: rgb(92, 148, 129);
+        border-style: solid;
+        width:80%;
+
+    }
+    .level_2{
+        display:inline-block;
+        align-content: top;
+        align-items: top;
+        background-color: rgb(36, 223, 161);
+        padding: 5px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        border-radius: 5px;
+        border-color: rgb(92, 148, 129);
+        border-style: solid;
+        vertical-align: top;
+        width:40%;
+        height:60%;
+    }
+    .level_3{
+        text-align: left;
+    }
+    .settings{
+    display: inline-block;
+    background-color: rgb(101, 214, 178);
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    border-color: rgb(92, 148, 129);
+    border-style: solid;
+    width:80%
+    }
+
+</style>
+<body>
+    <h1>Settings</h1>
+    <nav class="level_1">
+        <li class="level_2">
+            <div class="level_3">
+                <h3>AI Configuration</h3>
+                <label>Attatched AI</label><br>
+                <input type="text" value="Copilot 3.8"/><br>
+                <div>
+                    <label>Informação sobre a IA Selecionada</label>
+                </div>
+            </div>
+            <div class="level_3">
+                <h3>App Controls</h3>
+                <input type="checkbox"><label>Guide Arrows</label><br>
+                <input type="checkbox"><label>Voice Responses</label><br>
+                <input type="checkbox"><label>Voice CMD</label><br>
+            </div>
+            <div class="level_3">
+                <h3>Voice Confguration</h3>
+                <div class="level_4">
+                    <label>Voice Name</label><br>
+                    <input type="text" value="Voice Name"/><br>
+                </div>
+                <div class="level_4">
+                    <label>Response Delay</label><br>
+                    <input type="range" min="5" max="20">
+                </div>
+            </div>
+        </li>
+        <li class="level_2">
+            <h3>Standard Sites</h3>
+            <label>Sites Padrões</label><br>
+            <button>Música</button><br>
+            <button>Rede Social</button><br>
+            <button>Vídeos</button><br>
+            <button>Banco</button><br>
+            <button>E-Mail</button><br>
+            <button>Docs</button><br>
+        </li>
+    </nav><br>
+    <div class="level_1">
+        <form action="description.html">
+            <input class="settings" type="submit" value="Description">
+        </form>
+        <form action="app.html">
+            <input class="settings" type="submit" value="Back">
+        </form>
+    </div>
+</body>

@@ -1,0 +1,183 @@
+<head>
+    <title>Extension MVP - Blind Browsing - App</title>
+    <meta charset="utf8"/>
+</head>
+
+<style>
+
+  body{
+      align-items: center;
+      padding: 30px;
+      background-color: rgb(147, 206, 186);
+      text-align: center;
+      font-family: sans-serif;
+      margin: auto;
+      height: 500px;
+  }
+  h1{
+      font-weight: 500;
+      padding: 3px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 12px;
+      border-radius: 5px;
+      width: 80%;
+      background-color: rgb(115, 143, 143);
+  }
+  h2{
+      font-weight: 500;
+      padding: 3px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 12px;
+      border-radius: 5px;
+      width: 80%;
+  }
+  .controls{
+      display: inline-block;
+      background-color: rgb(36, 223, 161);
+      padding: 5px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      border-radius: 5px;
+      border-color: rgb(92, 148, 129);
+      border-style: solid;
+      width:80%;
+  }
+  .settings{
+      display: inline-block;
+      background-color: rgb(101, 214, 178);
+      padding: 5px;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 500;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      border-radius: 5px;
+      border-color: rgb(92, 148, 129);
+      border-style: solid;
+      width:80%
+  }
+  .devut{
+      width: 260px;
+      margin: auto;
+      background-image: linear-gradient(to bottom, rgb(115, 143, 143), rgb(147, 206, 186));
+      border-color: rgb(92, 148, 129);
+      border-style: solid;
+      border-radius: 20px;
+      padding: 20px
+  }
+  .controls label{
+      display:inline-block;
+      margin: auto;
+      font-size: large;
+      text-align: left;
+      font-family: sans-serif;
+      font-weight: 300;
+  }
+</style>
+
+<script text="javascript">
+
+</script>
+
+<body>
+    <h1>Blind Browsing MVP - Browser Extension App</h1>
+    <h2>The Extension's Poup-up</h2>
+    <div class="devut">    
+        <div class="controls">
+            <label id="activation">Activate</label><br>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div><br>
+        <div class="controls">
+            <label >Guide Arrows</label><br>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div><br>
+        <div class="controls">
+            <label>Voice</label><br>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div><br>
+        <div class="controls">
+            <label>Voice CMD</label><br>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <form action="settings.html">
+          <input class="settings" type="submit" value="Settings">
+        </form>
+    </div>
+</body>
+
+<style>
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+</style>
